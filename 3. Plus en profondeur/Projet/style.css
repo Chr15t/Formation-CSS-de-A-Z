@@ -1,0 +1,36 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #333;
+    font-family: sans-serif;
+}
+
+.container {
+    position: absolute;
+    width: 600px;
+    /* height: 600px; */
+    padding: 30px;
+    background: #f1f1f1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* bouger sur x et 5 */
+    border-radius: 10px;
+    box-shadow:  0px 15px 50px rgba(0, 0, 0, 0.9);
+}
+
+.circle {
+    /* z-index: 2; */
+    width: 200px;
+    height: 200px;
+    background: url('./ressources/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+    shape-outside: circle(); /* en forme de cercle */
+}
