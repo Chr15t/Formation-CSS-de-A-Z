@@ -2,6 +2,8 @@
     width: 300px;
     height: 300px;
     background: salmon;
+    border: 5px dashed black;
+    border-radius: 50%; /* ajout des petits cercles*/
 }
 
 .box2 {
@@ -9,5 +11,15 @@
     width: 300px;
     height: 300px;
     background: violet;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5); /* position x y et ombre*/
+    cursor: pointer;
 }
 
+ul {
+    list-style-type: none; /*enlever les points de la liste */
+}
+
+a {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 1)
+}
