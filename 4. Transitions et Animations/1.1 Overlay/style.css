@@ -1,0 +1,40 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* align-items: center; */
+ }
+
+ .container { 
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+ }
+ /* h1 {
+    padding-left: 50%;
+ } */
+ .overlay {
+    width: 400px;
+    height: 400px;
+    background: url('./ressources/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+ }
+ .overlay:hover {
+    opacity: 0.5;
+    transition-duration: 400ms;
+ }
+
+ .overlay > p {
+    padding: auto;
+    color: red;
+ }
+ 
