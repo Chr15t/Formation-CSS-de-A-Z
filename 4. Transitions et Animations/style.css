@@ -10,7 +10,10 @@ body {
   width: 300px;
   height: 300px;
   margin: 30px;
-  transform: translate(50px, 50px); /* bouger d'un point a un poit b */
+  /*transform: translate(50px, 50px);  bouger d'un point a un poit b */
+  /* transform: rotate(30deg); rotation en degre */
+  /* transform: scale(2); grandir l'element dans son ensemble */
+  /* transform: skew(60deg, 50deg); distortion sur x et y */
 }
 
 span {
