@@ -3,22 +3,43 @@
     height: 250px;
     background: #fa8072;
 }
+.boxActive:active {
+    /* width: 250px;
+    height: 250px; */
+    background: #f1f2d0;
+}
 
 .inpFocus {
     width: 250px;
 }
+.inpFocus:focus {
+    /* width: 250px; */
+    background: #fa8072;
+}
 
 .pHover {
     font-size: 50px;
+}
+.pHover:hover {
+    /* font-size: 50px; */
+    background: crimson;
 }
 
 .inpChecked {
     width: 50px;
     height: 50px;
 }
+.inpChecked:checked {
+    width: 60px;
+    height: 60px;
+}
 
 a {
     font-size: 30px;
+}
+
+a:visited {
+   background: brown;
 }
 
 
