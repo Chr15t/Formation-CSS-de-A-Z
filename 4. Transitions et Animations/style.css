@@ -16,10 +16,20 @@ body {
   /* transform: rotate(30deg); rotation en degre */
   /* transform: scale(2); grandir l'element dans son ensemble */
   /* transform: skew(60deg, 50deg); distortion sur x et y */
-  transform: scale(1.5) rotate(36deg);
+  /* transform: scale(1.5) rotate(36deg); */
+  /* transition-duration: 400ms; */
+  /* transition-property: background; */
+  /* transition-timing-function: cubic-bezier(.1, .78, 0.96, -0.04) */
+  /* transition-delay: 1s; */
+  transition: all 400ms ease-in-out;
 }
 
 span {
   font-size: 30px;
   color: #f1f1f1;
+}
+
+.box:hover {
+  background: lavender;
+  transform: rotate(36deg);
 }
