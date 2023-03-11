@@ -21,7 +21,15 @@ body {
   /* transition-property: background; */
   /* transition-timing-function: cubic-bezier(.1, .78, 0.96, -0.04) */
   /* transition-delay: 1s; */
-  transition: all 400ms ease-in-out;
+  /* transition: all 400ms ease-in-out; */
+  /* animation-name: spinAndMove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; */
+  /* animation-fill-mode: forwards; */
+  /* animation-direction: alternate; */
+  /* animation-timing-function: ease-in-out; */
+  position: absolute;
+  animation: spinAndMove 3s infinite alternate ease-in;
 }
 
 span {
@@ -31,5 +39,39 @@ span {
 
 .box:hover {
   background: lavender;
-  transform: rotate(36deg);
+  /* transform: rotate(36deg); */
+}
+
+@keyframes spinAndMove {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: #cd5c5c;
+
+   
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+    background-color: #abb44c;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(46deg);
+    /* transition: 500ms; */
+   
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background-color: #cd5c5c;   
+  }
+
+
+  from {
+    background: #cd5c5c;
+  }
+  to {
+    transform: rotate(720deg);
+    background: yellowgreen;
+  }
+
 }
