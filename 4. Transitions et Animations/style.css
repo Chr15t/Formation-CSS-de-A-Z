@@ -5,6 +5,8 @@ body {
     height: 100vh;
 }
 
+
+/* les transforms ne s'applique que sr les block */
 .box {
   background: #cd5c5c;
   width: 300px;
@@ -14,6 +16,7 @@ body {
   /* transform: rotate(30deg); rotation en degre */
   /* transform: scale(2); grandir l'element dans son ensemble */
   /* transform: skew(60deg, 50deg); distortion sur x et y */
+  transform: scale(1.5) rotate(36deg);
 }
 
 span {
